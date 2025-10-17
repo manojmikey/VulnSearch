@@ -1,8 +1,14 @@
+# Python
 __pycache__/
 *.pyc
-.env
-*.log
-*.txt
+*.pyo
+*.pyd
+venv/
+
+# Specific files to ignore
 testme.py
 resume.confi
 Arjun
+
+#textfiles
+*.txt
