@@ -18,7 +18,7 @@ def intel_content_discovery(file_path):
         anew_urls.wait(timeout=100)
         
         wexecution_time = time.time() - wstart_time
-        print(f"✅ httpx completed in {wexecution_time:.2f} seconds")
+        print(f"✅ waybackurls completed in {wexecution_time:.2f} seconds")
         # Check return codes
         if cat_livesites1.returncode != 0:
             raise subprocess.CalledProcessError(cat_livesites1.returncode, "cat")
@@ -96,7 +96,7 @@ def intel_content_discovery(file_path):
         
 
         kexecution_time = time.time() -kstart_time
-        print(f"✅ httpx completed in {kexecution_time:.2f} seconds")
+        print(f"✅ katana completed in {kexecution_time:.2f} seconds")
         # Check return codes
         if cat_livesites2.returncode != 0:
             raise subprocess.CalledProcessError(cat_livesites2.returncode, "cat")
@@ -193,7 +193,7 @@ def intel_content_discovery(file_path):
         
         stdout2, stderr2 = process2.communicate(timeout=300)
         a2execution_time = time.time() - a2start_time
-        print(f"✅ httpx completed in {a2execution_time:.2f} seconds")
+        print(f"✅ Arjun completed in {a2execution_time:.2f} seconds")
         if process2.returncode == 0:
             print("✅ Second Arjun completed successfully!")
 
