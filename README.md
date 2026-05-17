@@ -1,10 +1,10 @@
-# 🔍 project-vulnsearch
+#  project-vulnsearch
 
 An automated reconnaissance and content discovery pipeline for bug bounty hunters and penetration testers. Given a target domain, it chains together industry-standard tools to enumerate subdomains, probe live hosts, crawl endpoints, and extract parameters — all with a single command.
 
 ---
 
-## 🚀 What It Does
+##  What It Does
 
 | Phase | Description |
 |-------|-------------|
@@ -13,7 +13,7 @@ An automated reconnaissance and content discovery pipeline for bug bounty hunter
 
 ---
 
-## 📋 Prerequisites
+##  Prerequisites
 
 ### Python
 - Python 3.8+
@@ -34,7 +34,7 @@ An automated reconnaissance and content discovery pipeline for bug bounty hunter
 
 ---
 
-## 📦 Installation
+##  Installation
 
 ```bash
 git clone https://github.com/yourusername/project-vulnsearch.git
@@ -45,7 +45,7 @@ No Python dependencies beyond the standard library are required.
 
 ---
 
-## ⚙️ Usage
+##  Usage
 
 ```bash
 python3 main.py
@@ -60,13 +60,13 @@ Enter the domain name you want to scan: example.com
 The tool validates the domain format before proceeding. Use bare domains only — no `https://` prefix:
 
 ```
-✅  example.com          ← correct
-❌  https://example.com  ← incorrect
+  example.com          ← correct
+  https://example.com  ← incorrect
 ```
 
 ---
 
-## 📁 Output Files
+##  Output Files
 
 After a full run, the following files are created in your working directory:
 
@@ -89,7 +89,7 @@ After a full run, the following files are created in your working directory:
 
 ---
 
-## ⚠️ Known Limitations & Expected Behaviours
+##  Known Limitations & Expected Behaviours
 
 These are not bugs — they are expected behaviours based on real-world testing against large targets.
 
@@ -110,7 +110,7 @@ KATANA_DEPTH = 2   # lower = faster, less thorough
 ### arjun non-zero exit code
 arjun frequently exits with a non-zero return code **even when it successfully finds parameters**. The warning in the output is expected:
 ```
-⚠️  arjun exited with non-zero code (this is normal — check arjun_results.txt manually)
+  arjun exited with non-zero code (this is normal — check arjun_results.txt manually)
 ```
 Always inspect `arjun_results.txt` directly regardless of the exit message.
 
@@ -119,7 +119,7 @@ This file is built from JS URLs found in both `urls.txt` (waybackurls) and `kata
 
 ---
 
-## 🛠️ Tuning Parameters
+##  Tuning Parameters
 
 You can adjust these constants at the top of `content_discovery.py` to tune performance vs. thoroughness:
 
@@ -134,7 +134,7 @@ You can adjust these constants at the top of `content_discovery.py` to tune perf
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 project-vulnsearch/
@@ -146,18 +146,15 @@ project-vulnsearch/
 
 ---
 
-## 🔐 Legal Disclaimer
+##  Legal Disclaimer
 
 This tool is intended for **authorized security testing only**. Only run it against domains you own or have explicit written permission to test. Unauthorized scanning may violate the Computer Fraud and Abuse Act (CFAA) and equivalent laws in your jurisdiction.
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Pull requests are welcome. For major changes, open an issue first to discuss what you'd like to change.
 
 ---
 
-## 📄 License
-
-MIT
